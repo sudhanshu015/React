@@ -11,13 +11,14 @@ body {
   width: 100%;
 }
 .parent {
-  height: 100vh;
+  min-height:100vh;
   width: 100%;
   background-color: #111;
   padding: 30px;
   display: flex;
   /* align-items: center; */
   gap: 30px;
+  flex-wrap: wrap;
   
 }
 .card {
@@ -55,9 +56,7 @@ body {
   background-color: transparent;
   color: #b1b1b1;
 }
-.centre {
-  
-}
+
 .centre h3 {
   font-size: 17px;
   font-weight: 500;

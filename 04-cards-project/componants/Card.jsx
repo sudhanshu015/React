@@ -1,25 +1,27 @@
 import React from 'react'
 import{ Bookmark} from 'lucide-react'
 
-const Card = () => {
+const Card = (props) => {
+  console.log(props.company);
+  
   return (
         <div className="card">
        <div> <div className="top">
-          <img src="https://imgs.search.brave.com/GxVOq9xuqtiB4Tpa8JJxeWKumoDP0A9x9UXm7yU0e4A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdDMu/ZGVwb3NpdHBob3Rv/cy5jb20vMTAwMTg2/MC8xNjM3NS9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzE2Mzc1NzYz/Mi1zdG9jay1waG90/by1hbWF6b24tbG9n/by1vbi1hLXdoaXRl/LmpwZw" alt="" />
+          <img src={props.logo} alt="" />
           <button>Save<Bookmark size={12} /></button>
         </div>
         <div className="centre">
-          <h3>Amazon <span>5 days ago</span></h3>
-          <h2>Senior UI/UX Designer</h2>
+          <h3>{props.company} <span>{props.datePosted}</span></h3>
+          <h2>{props.post}</h2>
           <div className='tag'>
-            <h4>Part Time </h4>
-            <h4>SeniorLevel</h4>
+            <h4>{props.tag1}</h4>
+            <h4>{props.tag2}</h4>
           </div>
         </div></div>
         <div className="bottom">         
             <div>
-              <h3>$120/hr</h3>
-              <p> Mumbi,india</p>
+              <h3>{props.pay}</h3>
+              <p>{props.location}</p>
             </div>
             <button>Apply Now</button>
         </div>
