@@ -1,11 +1,11 @@
 import React from 'react'
 
-const button = () => {
+const App = () => {
   return (
     <div>
-      
+      App
     </div>
   )
 }
 
-export default button
+export default App
