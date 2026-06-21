@@ -6,7 +6,7 @@ const Page1Content = () => {
   return (
     <div className='py-10 px-18 flex  items-center gap-5 h-[90vh]'>
         <LeftContant/>
-        <RightContant/>
+        <RightContant users={props.users}/>
     </div>
   )
 }
