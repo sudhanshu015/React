@@ -1,10 +1,10 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react';
-const RIghtCardContant = () => {
+const RIghtCardContant = (props) => {
   return (
    <div className="absolute top-0 left-0 h-full w-full  p-8  flex flex-col justify-between">
         <h1 className=" text-2xl font-bold  rounded-full  h-12  w-12 flex justify-center bg-amber-50 items-center ">
-          1
+          {props.id+1}
         </h1>
 
         <div>
@@ -14,7 +14,7 @@ const RIghtCardContant = () => {
           </p>
           <div>
             <button className=" flex px-7 py-3 gap-4 rounded-3xl font-semibold bg-red-400 ">
-              Satisfied
+             {props.tag}
               <ArrowRight />
             </button>
           </div>
